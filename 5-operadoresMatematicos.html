@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let a, b, sum, res, mult, div, resid, poten;
+
+        //pedirDatos
+        a = prompt('Introduzca el primer numero: ');
+        b = prompt('Introduzca el segundo numero: ');
+
+        //suma
+        sum = a + b;
+        //resta-diferencia
+        res = a - b;
+        //multiplicacion
+        mult = a * b;
+        //division-cociente
+        div = a / b;
+        //modulo-residuo
+        resid = a % b;
+        //potencia
+        poten = a ** b;
+
+        //escribirResultados
+        document.write('La suma es: ', sum);
+        document.write('<br>');
+        document.write('La resta es: ', res);
+        document.write('<br>');
+        document.write('La multiplicacion es: ', mult);
+        document.write('<br>');
+        document.write('La division es: ', div);
+        document.write('<br>');
+        document.write('El residuo es: ', resid);
+        document.write('<br>');
+        document.write('La potencia es: ', poten);
+        document.write('<br>');*/
+
+/*pero tenemos un problema el cual es el tema de los valores.
+ya que al capturar los datos por prompt, estos son de tipo string y no de tipo number. 
+por lo tanto no se puede realizar la suma, resta, multiplicacion, division, residuo y potencia. por lo tanto tenemos que convertirlos a tipo number. para eso tenemos dos formas de hacerlo. la primera es con el parseInt() y la segunda es con el Number().
+
+        parseInt() convierte un string a un numero entero.
+        Number() convierte un string a un numero decimal.
+
+        parseInt(a) + parseInt(b) = parseInt(a + b)
+        Number(a) + Number(b) = Number(a + b)*/
+// por lo que quedaria una cosa así
+
+        let a, b, sum, res, mult, div, resid, poten;
+            
+        //pedirDatos
+        a = parseInt(prompt('Introduzca el primer numero: '));
+        b = parseInt(prompt('Introduzca el segundo numero: '));
+            
+        //suma
+        sum = a + b;
+        //resta-diferencia
+        res = a - b;
+        //multiplicacion
+        mult = a * b;
+        //division-cociente
+        div = a / b;
+        //modulo-residuo
+        resid = a % b;
+        //potencia
+        poten = a ** b;
+            
+        //escribirResultados
+        document.write('La suma es: ', sum);
+        document.write('<br>');
+        document.write('La resta es: ', res);
+        document.write('<br>');
+        document.write('La multiplicacion es: ', mult);
+        document.write('<br>');
+        document.write('La division es: ', div);
+        document.write('<br>');
+        document.write('El residuo es: ', resid);
+        document.write('<br>');
+        document.write('La potencia es: ', poten);
+        document.write('<br>');
+
+    </script>
+</body>
+</html>
