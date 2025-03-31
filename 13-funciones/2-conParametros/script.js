@@ -1,3 +1,4 @@
+//funciones con parametros
 let resultado
 
 function suma(valor1, valor2) {
