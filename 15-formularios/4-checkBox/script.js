@@ -6,8 +6,9 @@ function seleccion(){
         if (document.getElementById(checkId).checked) cantidad++;
     });
     
+    const mensaje = cantidad === 1 ? 'Conoces: <b>1</b> lenguaje' : `Conoces: <b>${cantidad}</b> lenguajes`;
     Swal.fire({
-        html: `Conoces: <b>${cantidad}</b> lenguajes`,
+        html: mensaje,
         icon: 'success',
         confirmButtonText: 'Aceptar'
     });
