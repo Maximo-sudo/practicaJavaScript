@@ -11,6 +11,6 @@ function ventana() {
 function confirmar() {
     let respuesta = confirm('Quieres Salir De La Pagina');
     if (respuesta == true) {
-        window.close();
+        window.close(); 
     }
 }
