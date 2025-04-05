@@ -9,5 +9,7 @@ function caracteres() {
     document.getElementById('cantidad').textContent = disponible;
     if (disponible <= 0){
         swal.fire('Caracteres agotados');
+        document.getElementById('texto').value = "";
+        document.getElementById('caracteres').textContent = 20;
     }
 }
