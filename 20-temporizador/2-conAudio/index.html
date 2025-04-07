@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h2>Alarma</h2>
+    <input type="number" id="timeSelect">
+    <button onclick="startTimer()">Iniciar Temporizador</button>
+    
+    <div id="timer" onclick="startTimer()">00:00</div>
+
+    <h1 id="textoAlarma" style="color: red;">APAGADO</h1>
+
+    <audio src="alarma.mp3" id="audioAlarma">
+        <source src="alarma.mp3" type="audio/mpeg">
+        El navegador no soporta el elemento de audio.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
