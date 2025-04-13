@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cuadro {
+    width: 200px;
+    height: 200px;
+    background-color: #e01616;
+    border-radius: 20px;
+    position: absolute;
+    display: block;
+    inset: 0;
+    margin: auto;
+    box-shadow: 10px 10px 30px black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro:hover {
+    width: 210px;
+    height: 210px;
+    transition: 0s;
+    box-shadow: 15px 15px 20px black;
+}
+
+.boton {
+    width: 60px;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.tipo-1:hover ,.tipo-2:hover ,.tipo-3:hover ,.tipo-4:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    width: 70px;
+    z-index: 10;
+}
+
+.tipo-1 ,.tipo-2 {
+    position: relative;
+    top: 15px;
+}
+
+.tipo-3 ,.tipo-4 {
+    position: relative;
+    top: -15px;
+}
