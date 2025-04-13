@@ -1,0 +1,14 @@
+{
+    "nombre": "Pedro",
+    "apellido": "Gonzalez",
+    "edad": 30,
+    "estudiante": true,
+    "direccion": {
+        "calle": "Alejo Carpentier",
+        "ciudad": "Madrid"
+    },
+    "telefonos": [
+        "123-456-789",
+        "987-654-321"
+    ]
+}
