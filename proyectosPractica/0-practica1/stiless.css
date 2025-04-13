@@ -1,0 +1,46 @@
+html {
+    height: auto;
+    background-color: rgb(196, 196, 196);
+}
+h1 {
+    color: rgb(104, 104, 255);
+    font-size: 48px;
+    text-align: center;
+    margin: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000
+}
+button {
+    background-color: rgb(104, 104, 255);
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 4px auto;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+button:hover {
+    box-shadow: black 2px 2px 5px;
+    background-color: rgba(104, 104, 255, 0.866);
+    transition: 0.3s;
+}
+
+li {
+    list-style-type: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin: 0 30px;
+    background-color: rgb(104, 104, 255); 
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    color: white;
+}
