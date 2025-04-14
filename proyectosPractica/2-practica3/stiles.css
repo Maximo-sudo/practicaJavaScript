@@ -139,3 +139,35 @@ main {
 .visible {
     display: block !important;
 }
+
+#sectionBlock1 ,#sectionBlock2 {
+    margin: 20px;
+}
+
+input {
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+    color: grey;
+    font-weight: lighter;
+}

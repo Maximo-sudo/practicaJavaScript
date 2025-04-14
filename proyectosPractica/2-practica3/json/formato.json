@@ -20,5 +20,24 @@
         "padding": "20px",
         "margin": "15px 0",
         "radiusBorder": "8px"
+    },
+    "html": {
+        "sectionBlock1": {
+            "input": {
+                "type": "text",
+                "id": "miInput",
+                "placeholder": "Buscar..."
+            },
+            "button": {
+                "id": "miButton",
+                "text": "Buscar"
+            }
+        },
+        "sectionBlock2": {
+            "ul": {
+                "id": "miList"
+            }
+        }
     }
 }
+

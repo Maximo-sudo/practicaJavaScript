@@ -11,6 +11,8 @@ let bloque1 = document.getElementById('bloque1');
 let bloque2 = document.getElementById('bloque2');
 let jsonData = {};
 
+
+
 // eventosMenu
 menuContainer.addEventListener('mouseenter', showMenu);
 menuContainer.addEventListener('mouseleave', hideMenu);
@@ -81,6 +83,7 @@ function chargeFormatMode(tipo, bloque) {
 
         bloque.appendChild(titulo);
         bloque.appendChild(content);
+        
     } else { 
         console.warn('Datos No Encontrados Para: ', tipo);
     }
