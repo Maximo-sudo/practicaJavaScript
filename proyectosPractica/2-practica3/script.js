@@ -30,9 +30,26 @@ menuItems.forEach(item => {
         e.target.classList.add('selected');
 
         handleSelection(value);
+        modeMenu(value);
+        // if (value === '') {
+        //     modeMenu(value);
+        // }
     });
 });
 
 function handleSelection(value) {
     console.log('Selected value: ' + value);
 };
+
+// function modeMenu() {
+//     console.log('Mode menu activated');
+// }
+
+function modeMenu(value) {
+    if (value === '') {
+        contMenu.classList.add('visible');
+    } else {
+        contMenu.classList.remove('visible');
+    }
+    console.log('Mode menu activated with value:', value);
+}

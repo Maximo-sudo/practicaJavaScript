@@ -23,7 +23,7 @@ header {
 
 .menu-container {
     position: relative;
-    margin-right: 40%;
+    margin-right: 10%;
 }
 
 .hidden-select {
@@ -56,25 +56,6 @@ header {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
-/* #menuSelector {
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding: 30px 40px;
-    border: none;
-    background-color: #333;
-    appearance: none;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    border-radius: 40%;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    transition: 0s;
-}
-
-#menuSelector:hover {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-} */
 
 .menu-content {
     position: absolute;
@@ -126,6 +107,35 @@ header {
 }
 
 .menu-item.selected::after {
-    content: " ✓";
+    content: "<--";
     margin-left: 8px;
+}
+
+/* --------------------------------------------------------- */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#content-groupMenu {
+    width: 80rem;
+    height: auto;
+    margin: 10px 20px;
+    background-color: #333;
+    color: white;
+    padding: 80px;
+    font-size: 90px;
+    margin-top: 13%;
+    border-radius: 10%;    
+}
+
+#content-groupMenu {
+    display: none;
+}
+
+#content-groupMenu.visible {
+    display: block;
 }
