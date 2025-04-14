@@ -50,9 +50,9 @@ function modeMenu(value) {
         contMenu.classList.add('visible');
     } else if (value === 'peliculas.json') {
         bloque1.classList.add('visible');
-        if (jsonData[value]) {
-            console.log('hola')
-        }
+        // if (jsonData[value]) {
+        //     console.log('hola')
+        // }
     } else if (value === 'series.json') {
         bloque2.classList.add('visible');
     } 
