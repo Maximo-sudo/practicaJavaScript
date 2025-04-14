@@ -11,26 +11,21 @@
         <h3 id="titleSelector">Selector De Peliculas Y Series</h3>
         
         <div class="menu-container">
-            <select id="menuSelector">
+            <select id="menuSelector" class="hidden-select">
                 <option value="">MENU</option>
                 <option value="peliculas.json">Peliculas</option>
                 <option value="series.json">Series</option>
             </select>
-            <div id="menuContent" class="menu-content">
-                <p>Peliculas</p>
-                <p>Series</p>
+            <div class="custom-menu">
+                <div class="menu-button" id="menu-button">MENU</div>
+                <div id="menuContent" class="menu-content">
+                    <p class="menu-item" data-value="peliculas.json">Peliculas</p>
+                    <p class="menu-item" data-value="series.json">Series</p>
+                </div>
             </div>
         </div>
-
-        <!-- <div class="menu">
-            MENU
-            <select name="" id="menuSelector">
-                <option value="peliculas.json">Peliculas</option>
-                <option value="series.json">Series</option>
-            </select>
-        </div> -->
     </header>
-    
+
 </body>
     <script src="script.js"></script>
 </html>

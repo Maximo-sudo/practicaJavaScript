@@ -10,7 +10,6 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
-    flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +26,37 @@ header {
     margin-right: 40%;
 }
 
-#menuSelector {
+.hiden-select {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.custom-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border-radius: 40%;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+/* #menuSelector {
     font-size: 20px;
     letter-spacing: 2px;
     padding: 30px 40px;
@@ -45,21 +74,22 @@ header {
 #menuSelector:hover {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
-}
+} */
 
 .menu-content {
     position: absolute;
-    flex-direction: row;
-    display: flex;
-    left: -8%;
-    transform: translateY(-90px);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #333;
     border-radius: 8px;
-    padding: 30px 50px;
-    color: white;
+    padding: 10px 0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     opacity: 0;
-    transition: opacity 0.3s;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    min-width: 150px;
+    z-index: 1000;
 }
 
 .menu-content.visible {
