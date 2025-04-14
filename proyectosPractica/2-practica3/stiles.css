@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: antiquewhite;
 }
 
@@ -132,10 +132,10 @@ main {
     border-radius: 10%;    
 }
 
-#content-groupMenu {
+#content-groupMenu ,.bloque {
     display: none;
 }
 
-#content-groupMenu.visible {
-    display: block;
+.visible {
+    display: block !important;
 }
