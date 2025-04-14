@@ -1,0 +1,14 @@
+{
+    "peliculas": {
+        "titulo": "Apartado De Peliculas",
+        "color": "#2c3e50",
+        "colorTexto": "#ecf0f1",
+        "borde": "3px solid #e74c3c"
+    },
+    "series": {
+        "titulo": "Apartado De Series",
+        "color": "#343434",
+        "colorTexto": "#2c3e50",
+        "borde": "3px solid #ecf0f1"
+    }
+}

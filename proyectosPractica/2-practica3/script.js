@@ -1,13 +1,16 @@
+// informacionMenu
 let menuContainer = document.querySelector('.menu-container');
 let menuContent = document.getElementById('menuContent');
 let menuButton = document.getElementById('menuButton');
 let menuItems = document.querySelectorAll('.menu-item');
 let hiddenSelect = document.getElementById('menuSelector');
 
+// codigoDesplegable
 let contMenu = document.getElementById('content-groupMenu');
 let bloque1 = document.getElementById('bloque1');
 let bloque2 = document.getElementById('bloque2');
 
+// bloqueInfo
 
 menuContainer.addEventListener('mouseenter', showMenu);
 menuContainer.addEventListener('mouseleave', hideMenu);
@@ -33,9 +36,6 @@ menuItems.forEach(item => {
 
         handleSelection(value);
         modeMenu(value);
-        // if (value === '') {
-        //     modeMenu(value);
-        // }
     });
 });
 
@@ -43,31 +43,17 @@ function handleSelection(value) {
     console.log('Selected value: ' + value);
 };
 
-// function modeMenu() {
-//     console.log('Mode menu activated');
-// }
-
 function modeMenu(value) {
-    // Oculta todos los elementos
     contMenu.classList.remove('visible');
     bloque1.classList.remove('visible');
     bloque2.classList.remove('visible');
 
-    // Muestra solo el correspondiente
     if (value === '') {
         contMenu.classList.add('visible');
     } else if (value === 'peliculas.json') {
         bloque1.classList.add('visible');
     } else if (value === 'series.json') {
         bloque2.classList.add('visible');
-    }
-}
-
-// function bloque1(value) {
-//     if (value === 'peliculas.json') {
-//         bloque1.classList.add('visible');
-//     } else {
-//         bloque1.classList.remove('visible');
-//     }
-//     console.log('Modo Peliculas:', value);
-// };
+    } 
+    console.log('Mode menu activated with value:', value);
+};
