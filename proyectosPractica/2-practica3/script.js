@@ -24,7 +24,7 @@ menuItems.forEach(item => {
         let text = e.target.textContent;
 
         hiddenSelect.value = value;
-        menuButton.textContent = `${text} ▼`;
+        menuButton.textContent = text;
 
         menuItems.forEach(i => i.classList.remove('selected'));
         e.target.classList.add('selected');
