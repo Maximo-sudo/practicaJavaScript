@@ -16,7 +16,7 @@
         "colorTexto": "white",
         "ancho": "50%",
         "alto": "80px",
-        "sombra": "0px 0px 10px solid black",
+        "sombra": "0px 10px 20px #000",
         "padding": "20px",
         "margin": "15px 0",
         "radiusBorder": "8px"

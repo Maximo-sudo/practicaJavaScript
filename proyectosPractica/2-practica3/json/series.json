@@ -1,0 +1,13 @@
+{
+    "data":
+    [
+        {"nombre": "THE CROWN", "sinopsis": "La historia del reinado de la Reina Isabel II y los eventos que moldearon la segunda mitad del siglo XX."},
+        {"nombre": "BLACK MIRROR", "sinopsis": "Una serie antológica que explora un futuro cercano donde la tecnología impacta profundamente en la sociedad."},
+        {"nombre": "WESTWORLD", "sinopsis": "Un parque temático futurista donde los androides comienzan a cuestionar su realidad."},
+        {"nombre": "THE BOYS", "sinopsis": "Un grupo de vigilantes lucha contra superhéroes corruptos que abusan de sus poderes."},
+        {"nombre": "MONEY HEIST", "sinopsis": "Un grupo de ladrones, liderados por 'El Profesor', lleva a cabo un ambicioso atraco a la Fábrica Nacional de Moneda y Timbre."},
+        {"nombre": "SUCCESSION", "sinopsis": "La lucha interna de una poderosa familia por el control de su imperio mediático."},
+        {"nombre": "PEAKY BLINDERS", "sinopsis": "Una familia de gánsteres en Birmingham, Inglaterra, lucha por expandir su imperio criminal después de la Primera Guerra Mundial."},
+        {"nombre": "HANNIBAL", "sinopsis": "La compleja relación entre un brillante psiquiatra y un investigador del FBI mientras resuelven casos de asesinato."}
+    ]
+}

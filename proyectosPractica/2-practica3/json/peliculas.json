@@ -1,0 +1,13 @@
+{
+    "data":
+    [
+        {"nombre": "AVATAR", "sinopsis": "Jake Sully (Sam Worthington), un marine que quedó paralítico, es seleccionado para participar en el programa Avatar, un proyecto que transporta la mente de los científicos a unos cuerpos artificiales de na'vi para que la comunicación con los nativos resulte así más sencilla."},
+        {"nombre": "BATMAN", "sinopsis": "Bruce Wayne se convierte en el vigilante enmascarado conocido como Batman para combatir el crimen en Gotham City."},
+        {"nombre": "COCO", "sinopsis": "Miguel, un joven aspirante a músico, se embarca en un viaje al mundo de los muertos para descubrir la verdad sobre su familia."},
+        {"nombre": "DUNE", "sinopsis": "Paul Atreides, un joven brillante, debe viajar al planeta más peligroso del universo para asegurar el futuro de su familia y su pueblo."},
+        {"nombre": "ETERNALS", "sinopsis": "Un grupo de héroes inmortales debe reunirse para proteger a la humanidad de una amenaza antigua."},
+        {"nombre": "FROZEN", "sinopsis": "Anna y Elsa, dos hermanas, se embarcan en una aventura para salvar su reino del invierno eterno."},
+        {"nombre": "GLADIATOR", "sinopsis": "Un general romano traicionado busca venganza contra el emperador corrupto que asesinó a su familia."},
+        {"nombre": "HERCULES", "sinopsis": "El semidiós Hércules debe enfrentarse a desafíos épicos para demostrar su valía y encontrar su lugar en el mundo."}
+    ]
+}
