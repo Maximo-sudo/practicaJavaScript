@@ -26,7 +26,7 @@ header {
     margin-right: 40%;
 }
 
-.hiden-select {
+.hidden-select {
     position: absolute;
     opacity: 0;
     width: 0;
@@ -95,4 +95,37 @@ header {
 .menu-content.visible {
     opacity: 1;
     visibility: visible;
+}
+
+.menu-item {
+    padding: 12px 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.menu-item:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+
+.menu-content::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+}
+.selected-option {
+    color: #00ff88 !important;
+    font-weight: bold;
+}
+
+.menu-item.selected::after {
+    content: " ✓";
+    margin-left: 8px;
 }
