@@ -9,16 +9,14 @@ let hiddenSelect = document.getElementById('menuSelector');
 let contMenu = document.getElementById('content-groupMenu');
 let bloque1 = document.getElementById('bloque1');
 let bloque2 = document.getElementById('bloque2');
+let jsonData = {};
 
-// bloqueInfo
 
 menuContainer.addEventListener('mouseenter', showMenu);
 menuContainer.addEventListener('mouseleave', hideMenu);
-
 function showMenu() {
     menuContent.classList.add('visible');
 };
-
 function hideMenu() {
     menuContent.classList.remove('visible');
 };
@@ -52,8 +50,27 @@ function modeMenu(value) {
         contMenu.classList.add('visible');
     } else if (value === 'peliculas.json') {
         bloque1.classList.add('visible');
+        if (jsonData[value]) {
+            console.log('hola')
+        }
     } else if (value === 'series.json') {
         bloque2.classList.add('visible');
     } 
     console.log('Mode menu activated with value:', value);
 };
+
+function loadFormatMode() {
+    fetch('json/formato.json')
+        .then(response => response.json())
+        .then(data => {
+            jsonData = data;
+            console.log('Datos cargados: ', jsonData);
+        })
+        .catch(error => {
+            console.log('Error cargando formato: ', error);
+        });
+};
+
+window.onload = () => {
+    loadFormatMode();
+}
