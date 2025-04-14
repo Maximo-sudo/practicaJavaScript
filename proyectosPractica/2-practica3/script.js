@@ -3,7 +3,7 @@ let menuContent = document.getElementById('menuContent');
 let menuButton = document.getElementById('menuButton');
 let menuItems = document.querySelectorAll('.menu-item');
 let hiddenSelect = document.getElementById('menuSelector');
-
+let contMenu = document.getElementById('content-groupMenu');
 
 
 
