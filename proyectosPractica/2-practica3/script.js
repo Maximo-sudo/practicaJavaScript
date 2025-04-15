@@ -67,21 +67,33 @@ function chargeFormatMode(tipo, bloque) {
 
         const titulo = document.createElement('h1');
         titulo.textContent = jsonData[tipo].titulo;
+        titulo.className = 'bloque-titulo';
+        bloque.appendChild(titulo);
 
-        // heDeDarleFuncionalidadAlCrearLosOtrosJson
         const content = document.createElement('p');
         content.textContent = jsonData[tipo].content;
 
-        bloque.style.background = jsonData[tipo].fondo;
-        bloque.style.color = jsonData[tipo].colorTexto;
-        bloque.style.width = jsonData[tipo].ancho;
-        bloque.style.height = jsonData[tipo].alto;
-        bloque.style.boxShadow = jsonData[tipo].sombra;
-        bloque.style.padding = jsonData[tipo].padding;
-        bloque.style.margin = jsonData[tipo].margin;
-        bloque.style.borderRadius = jsonData[tipo].radiusBorder;
+        Object.assign(bloque.style, {
+            background: jsonData[tipo].fondo,
+            color: jsonData[tipo].colorTexto,
+            width: jsonData[tipo].ancho,
+            height: jsonData[tipo].alto,
+            boxShadow: jsonData[tipo].sombra,
+            padding: jsonData[tipo].padding,
+            margin: jsonData[tipo].margin,
+            borderRadius: jsonData[tipo].radiusBorder
+        });
 
-        bloque.appendChild(titulo);
+        // bloque.style.background = jsonData[tipo].fondo;
+        // bloque.style.color = jsonData[tipo].colorTexto;
+        // bloque.style.width = jsonData[tipo].ancho;
+        // bloque.style.height = jsonData[tipo].alto;
+        // bloque.style.boxShadow = jsonData[tipo].sombra;
+        // bloque.style.padding = jsonData[tipo].padding;
+        // bloque.style.margin = jsonData[tipo].margin;
+        // bloque.style.borderRadius = jsonData[tipo].radiusBorder;
+
+        
         bloque.appendChild(content);
         
     } else { 
