@@ -18,10 +18,10 @@ menuContainer.addEventListener('mouseenter', showMenu);
 menuContainer.addEventListener('mouseleave', hideMenu);
 function showMenu() {
     menuContent.classList.add('visible');
-};
+}
 function hideMenu() {
     menuContent.classList.remove('visible');
-};
+}
 
 // manejoIntems
 menuItems.forEach(item => {
@@ -42,7 +42,7 @@ menuItems.forEach(item => {
 
 function handleSelection(value) {
     console.log('Selected value: ', value);
-};
+}
 
 function modeMenu(value) {
     contMenu.classList.remove('visible');
@@ -59,7 +59,7 @@ function modeMenu(value) {
         chargeFormatMode(value, bloque2);
     } 
     console.log('Mode menu activated with value:', value);
-};
+}
 
 function chargeFormatMode(tipo, bloque) {
     if (jsonData[tipo]) {
@@ -70,8 +70,32 @@ function chargeFormatMode(tipo, bloque) {
         titulo.className = 'bloque-titulo';
         bloque.appendChild(titulo);
 
-        const content = document.createElement('p');
-        content.textContent = jsonData[tipo].content;
+        // const content = document.createElement('p');
+        // content.textContent = jsonData[tipo].content;
+
+        if (jsonData[tipo].html) {
+            const sectionBusqueda = document.createElement('div');
+            sectionBusqueda.className = 'seccion-busqueda';
+
+            const input = document.createElement('input');
+            Object.assign(input, jsonData[tipe].html.sectionBlock1.input);
+
+            const button = document.createElement('button');
+            Object.assign(button, jsonData[tipe].html.sectionBlock1.botton);
+            // heDeCrearUnaEscucha
+
+            sectionBusqueda.appendChild(input);
+            sectionBusqueda.appendChild(button);
+            bloque.appendChild(sectionBusqueda);
+
+            const sectionLista = document.createElement('div');
+            const ul = document.createElement('ul');
+            ul.id = jsonData[tipo].html.sectionBlock2.ul.id;
+            ul.className = 'lista-resultados';
+
+            sectionLista.appendChild(ul);
+            bloque.appendChild(sectionLista);
+        }
 
         Object.assign(bloque.style, {
             background: jsonData[tipo].fondo,
@@ -84,17 +108,7 @@ function chargeFormatMode(tipo, bloque) {
             borderRadius: jsonData[tipo].radiusBorder
         });
 
-        // bloque.style.background = jsonData[tipo].fondo;
-        // bloque.style.color = jsonData[tipo].colorTexto;
-        // bloque.style.width = jsonData[tipo].ancho;
-        // bloque.style.height = jsonData[tipo].alto;
-        // bloque.style.boxShadow = jsonData[tipo].sombra;
-        // bloque.style.padding = jsonData[tipo].padding;
-        // bloque.style.margin = jsonData[tipo].margin;
-        // bloque.style.borderRadius = jsonData[tipo].radiusBorder;
-
-        
-        bloque.appendChild(content);
+        // bloque.appendChild(content);
         
     } else { 
         console.warn('Datos No Encontrados Para: ', tipo);
@@ -112,7 +126,7 @@ function loadFormatMode() {
         .catch(error => {
             console.log('Error cargando formato: ', error);
         });
-};
+}
 
 window.onload = () => {
     loadFormatMode();
