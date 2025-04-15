@@ -78,19 +78,21 @@ function chargeFormatMode(tipo, bloque) {
             sectionBusqueda.className = 'seccion-busqueda';
 
             const input = document.createElement('input');
-            Object.assign(input, jsonData[tipe].html.sectionBlock1.input);
+            Object.assign(input, jsonData[tipo].html.sectionBlock1.input);
 
             const button = document.createElement('button');
-            Object.assign(button, jsonData[tipe].html.sectionBlock1.botton);
-            // heDeCrearUnaEscucha
+            Object.assign(button, jsonData[tipo].html.sectionBlock1.botton);
+            button.addEventListener('click', () => buscarContenido(tipo, input.value));
 
             sectionBusqueda.appendChild(input);
             sectionBusqueda.appendChild(button);
             bloque.appendChild(sectionBusqueda);
 
             const sectionLista = document.createElement('div');
+            sectionLista.className = 'seccion-lista';
+            
             const ul = document.createElement('ul');
-            ul.id = jsonData[tipo].html.sectionBlock2.ul.id;
+            Object.assign(ul, jsonData[tipo].html.sectionBlock2.ul);
             ul.className = 'lista-resultados';
 
             sectionLista.appendChild(ul);
@@ -108,8 +110,6 @@ function chargeFormatMode(tipo, bloque) {
             borderRadius: jsonData[tipo].radiusBorder
         });
 
-        // bloque.appendChild(content);
-        
     } else { 
         console.warn('Datos No Encontrados Para: ', tipo);
     }
